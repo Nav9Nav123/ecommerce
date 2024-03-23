@@ -1,23 +1,23 @@
 <div class="col-2">
 
 <h5 class="link-container">
-    <%= link_to "Home", root_path, class: "link #{@page == 'home' ? 'active' : ''}" %>
+    <%= link_to "Home", root_path, class: "link #{@page == 'home' ? 'active' : ''}", style: "color: #800000;" %>
 </h5>
 
 <h5 class="link-container">
-    <%= link_to "Menu", menu_path, class: "link #{@page == 'menu' ? 'active' : ''}" %>
+    <%= link_to "Menu", menu_path, class: "link #{@page == 'menu' ? 'active' : ''}", style: "color: #800000;" %>
 </h5>
 
 <h5 class="link-container">
-    <%= link_to "Catering", catering_path, class: "link #{@page == 'catering' ? 'active' : ''}" %>
+    <%= link_to "Catering", catering_path, class: "link #{@page == 'catering' ? 'active' : ''}", style: "color: #800000;" %>
 </h5>
 
 <h5 class="link-container">
-    <%= link_to "More Info", info_path, class: "link #{@page == 'info' ? 'active' : ''}" %>
+    <%= link_to "More Info", info_path, class: "link #{@page == 'info' ? 'active' : ''}", style: "color: #800000;" %>
 </h5>
 
 <h5 class="link-container">
-    <%= link_to "Customer Reviews", "", class: "link #{@page == 'reviews' ? 'active' : ''}" %>
+    <%= link_to "Customer Reviews", '', class: "link #{@page == 'reviews' ? 'active' : ''}", style: "color: #800000;" %> <!-- Assuming "reviews_path" is your path helper -->
 </h5>
 
 </div>
