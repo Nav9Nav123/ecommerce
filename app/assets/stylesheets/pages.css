@@ -43,7 +43,7 @@
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
-    background-color: #FFF;
+    background-color: #abb91b;
     width: 100%;
     padding: 2em;
 
@@ -76,13 +76,13 @@
     padding-left: 1em;
     padding-top: 0.25em;
     .link {
-        color: #FFF;
+        color: #ec1010;
     }
     .active {
-        color: rgba(255,255,255,0.75);
+        color: rgba(216, 23, 23, 0.75);
     }
     .link:active {
-        color: rgba(255,255,255,0.75)
+        color: rgba(192, 17, 17, 0.75)
     }
 }
 

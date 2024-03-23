@@ -42,7 +42,7 @@ gem "devise"
 
 gem "simple_form"
 
-gem 'sassc-rails'
+gem 'sassc'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false

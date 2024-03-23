@@ -2,18 +2,17 @@
 <html>
   <head>
     <title>Restaurant</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-   
-
-    <%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
 
   </head>
 
   <body>
+    <%cache do %>
     <div class="<%= @page %>-page"> 
         <div class="row page-container">
              <%= render 'layouts/links' %>
@@ -26,6 +25,7 @@
              <div class="col-2"> </div>
         </div>
      </div>
+     <% end %>
    
 </body>
 </html>
