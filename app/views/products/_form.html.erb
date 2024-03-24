@@ -71,7 +71,19 @@
     <%= form.check_box :featured %>
   </div>
 
-  <div>
+  <div class="field">
+    <%= form.label :category%>
+    <%= form.select :category_id, options_from_collection_for_select(Category.all, :id, :heading, @production.category.id) %>
+  </div>
+
+
+  <div class="field">
+       <%= form.label :image%>
+       <%= form.file_field :image %>
+
+  </div>
+
+  <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>

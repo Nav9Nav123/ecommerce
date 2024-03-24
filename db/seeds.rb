@@ -14,6 +14,9 @@ User.create!(email: 'admin@example.com',
              password_confirmation: 'password',
              admin: true)
 
+Category.create!(heading: 'Pizza', body: "It's so good dough!", display: true)
+Category.create!(heading: 'Pasta', body)
+
 25.times do |i|
     Product.create!(
         name: "Pizza",
